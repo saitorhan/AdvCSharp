@@ -16,6 +16,11 @@ namespace AdvCSharp.FormApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            System.Threading.Thread.CurrentThread.CurrentCulture =
+                System.Threading.Thread.CurrentThread.CurrentUICulture =
+                    System.Globalization.CultureInfo.GetCultureInfo(Properties.Settings.Default.Lang);
+
             Application.Run(new AnaForm());
         }
     }

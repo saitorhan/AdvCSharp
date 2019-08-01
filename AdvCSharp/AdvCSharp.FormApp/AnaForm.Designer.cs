@@ -37,6 +37,10 @@
             this.yatayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dikeyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.üstÜsteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eklentilerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingilizceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.türkçeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +51,9 @@
             this.form2ToolStripMenuItem,
             this.form3ToolStripMenuItem,
             this.form4ToolStripMenuItem,
-            this.düzenToolStripMenuItem});
+            this.düzenToolStripMenuItem,
+            this.eklentilerToolStripMenuItem,
+            this.dilToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1032, 24);
@@ -95,23 +101,52 @@
             // yatayToolStripMenuItem
             // 
             this.yatayToolStripMenuItem.Name = "yatayToolStripMenuItem";
-            this.yatayToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.yatayToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.yatayToolStripMenuItem.Text = "Yatay";
             this.yatayToolStripMenuItem.Click += new System.EventHandler(this.yatayToolStripMenuItem_Click);
             // 
             // dikeyToolStripMenuItem
             // 
             this.dikeyToolStripMenuItem.Name = "dikeyToolStripMenuItem";
-            this.dikeyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dikeyToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.dikeyToolStripMenuItem.Text = "Dikey";
             this.dikeyToolStripMenuItem.Click += new System.EventHandler(this.dikeyToolStripMenuItem_Click);
             // 
             // üstÜsteToolStripMenuItem
             // 
             this.üstÜsteToolStripMenuItem.Name = "üstÜsteToolStripMenuItem";
-            this.üstÜsteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.üstÜsteToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.üstÜsteToolStripMenuItem.Text = "Üst Üste";
             this.üstÜsteToolStripMenuItem.Click += new System.EventHandler(this.üstÜsteToolStripMenuItem_Click);
+            // 
+            // eklentilerToolStripMenuItem
+            // 
+            this.eklentilerToolStripMenuItem.Name = "eklentilerToolStripMenuItem";
+            this.eklentilerToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.eklentilerToolStripMenuItem.Text = "Eklentiler";
+            // 
+            // dilToolStripMenuItem
+            // 
+            this.dilToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ingilizceToolStripMenuItem,
+            this.türkçeToolStripMenuItem});
+            this.dilToolStripMenuItem.Name = "dilToolStripMenuItem";
+            this.dilToolStripMenuItem.Size = new System.Drawing.Size(33, 20);
+            this.dilToolStripMenuItem.Text = "Dil";
+            // 
+            // ingilizceToolStripMenuItem
+            // 
+            this.ingilizceToolStripMenuItem.Name = "ingilizceToolStripMenuItem";
+            this.ingilizceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ingilizceToolStripMenuItem.Text = "İngilizce";
+            this.ingilizceToolStripMenuItem.Click += new System.EventHandler(this.ingilizceToolStripMenuItem_Click);
+            // 
+            // türkçeToolStripMenuItem
+            // 
+            this.türkçeToolStripMenuItem.Name = "türkçeToolStripMenuItem";
+            this.türkçeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.türkçeToolStripMenuItem.Text = "Türkçe";
+            this.türkçeToolStripMenuItem.Click += new System.EventHandler(this.türkçeToolStripMenuItem_Click);
             // 
             // AnaForm
             // 
@@ -123,6 +158,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AnaForm";
             this.Text = "AnaForm";
+            this.Load += new System.EventHandler(this.AnaForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -141,5 +177,9 @@
         private System.Windows.Forms.ToolStripMenuItem yatayToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dikeyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem üstÜsteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eklentilerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dilToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ingilizceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem türkçeToolStripMenuItem;
     }
 }
