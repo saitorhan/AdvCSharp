@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.mailForm1 = new AdvCSharp.FormApp.MailForm();
-            this.numberOnly1 = new AdvCSharp.FormApp.NumberOnly();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mailForm1
@@ -49,30 +49,32 @@
             this.mailForm1.TabIndex = 0;
             this.mailForm1.Username = null;
             // 
-            // numberOnly1
+            // button1
             // 
-            this.numberOnly1.Location = new System.Drawing.Point(631, 12);
-            this.numberOnly1.Name = "numberOnly1";
-            this.numberOnly1.Size = new System.Drawing.Size(100, 20);
-            this.numberOnly1.TabIndex = 1;
+            this.button1.Location = new System.Drawing.Point(411, 395);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Gönder";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(866, 633);
-            this.Controls.Add(this.numberOnly1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.mailForm1);
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private MailForm mailForm1;
-        private NumberOnly numberOnly1;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -16,5 +16,18 @@ namespace AdvCSharp.FormApp
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            mailForm1.ServerName = "smtp.gmail.com";
+            mailForm1.Port = 587;
+            mailForm1.RequireSsl = true;
+            mailForm1.Username = "saitorhan@gmail.com";
+            mailForm1.Password = "gseylrnczhvkkegi";
+            mailForm1.IsHtml = true;
+
+            bool mailGonder = mailForm1.MailGonder();
+            MessageBox.Show(mailGonder.ToString());
+        }
     }
 }
