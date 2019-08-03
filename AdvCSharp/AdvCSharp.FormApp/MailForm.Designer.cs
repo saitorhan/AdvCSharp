@@ -38,6 +38,8 @@
             this.textBoxBcc = new System.Windows.Forms.TextBox();
             this.textBoxKonu = new System.Windows.Forms.TextBox();
             this.textBoxMesaj = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // label1
@@ -91,7 +93,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxKime.Location = new System.Drawing.Point(57, 7);
             this.textBoxKime.Name = "textBoxKime";
-            this.textBoxKime.Size = new System.Drawing.Size(414, 20);
+            this.textBoxKime.Size = new System.Drawing.Size(587, 20);
             this.textBoxKime.TabIndex = 1;
             // 
             // textBoxCc
@@ -100,7 +102,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxCc.Location = new System.Drawing.Point(57, 33);
             this.textBoxCc.Name = "textBoxCc";
-            this.textBoxCc.Size = new System.Drawing.Size(414, 20);
+            this.textBoxCc.Size = new System.Drawing.Size(587, 20);
             this.textBoxCc.TabIndex = 1;
             // 
             // textBoxBcc
@@ -109,7 +111,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxBcc.Location = new System.Drawing.Point(57, 59);
             this.textBoxBcc.Name = "textBoxBcc";
-            this.textBoxBcc.Size = new System.Drawing.Size(414, 20);
+            this.textBoxBcc.Size = new System.Drawing.Size(587, 20);
             this.textBoxBcc.TabIndex = 1;
             // 
             // textBoxKonu
@@ -118,24 +120,45 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxKonu.Location = new System.Drawing.Point(60, 85);
             this.textBoxKonu.Name = "textBoxKonu";
-            this.textBoxKonu.Size = new System.Drawing.Size(414, 20);
+            this.textBoxKonu.Size = new System.Drawing.Size(587, 20);
             this.textBoxKonu.TabIndex = 1;
             // 
             // textBoxMesaj
             // 
-            this.textBoxMesaj.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBoxMesaj.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxMesaj.Location = new System.Drawing.Point(60, 111);
             this.textBoxMesaj.Multiline = true;
             this.textBoxMesaj.Name = "textBoxMesaj";
-            this.textBoxMesaj.Size = new System.Drawing.Size(414, 252);
+            this.textBoxMesaj.Size = new System.Drawing.Size(587, 252);
             this.textBoxMesaj.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(-3, 369);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(31, 13);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Ekler";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(60, 369);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(584, 93);
+            this.flowLayoutPanel1.TabIndex = 3;
+            this.flowLayoutPanel1.DoubleClick += new System.EventHandler(this.flowLayoutPanel1_DoubleClick);
             // 
             // MailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.textBoxMesaj);
             this.Controls.Add(this.textBoxKonu);
             this.Controls.Add(this.textBoxBcc);
@@ -147,7 +170,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "MailForm";
-            this.Size = new System.Drawing.Size(474, 366);
+            this.Size = new System.Drawing.Size(647, 475);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,5 +188,7 @@
         private System.Windows.Forms.TextBox textBoxBcc;
         private System.Windows.Forms.TextBox textBoxKonu;
         private System.Windows.Forms.TextBox textBoxMesaj;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

@@ -23,7 +23,7 @@ namespace AdvCSharp.FormApp
             mailForm1.Port = 587;
             mailForm1.RequireSsl = true;
             mailForm1.Username = "saitorhan@gmail.com";
-            mailForm1.Password = "gseylrnczhvkkegi";
+            mailForm1.Password = "rxeohxsfqnrtxxbj";
             mailForm1.IsHtml = true;
 
             bool mailGonder = mailForm1.MailGonder();
