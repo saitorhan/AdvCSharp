@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvCSharp.FormApp", "AdvCSh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginInterface", "PluginInterface\PluginInterface.csproj", "{2CA3DF50-A29F-425C-AC4A-D772780B6517}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceSendMail", "WindowsServiceSendMail\WindowsServiceSendMail.csproj", "{B6BBDA9D-4F98-4742-AC42-7CFD679DEDB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{D7CADA4C-D298-41F4-B715-46D235A8C977}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{2CA3DF50-A29F-425C-AC4A-D772780B6517}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CA3DF50-A29F-425C-AC4A-D772780B6517}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CA3DF50-A29F-425C-AC4A-D772780B6517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6BBDA9D-4F98-4742-AC42-7CFD679DEDB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6BBDA9D-4F98-4742-AC42-7CFD679DEDB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6BBDA9D-4F98-4742-AC42-7CFD679DEDB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6BBDA9D-4F98-4742-AC42-7CFD679DEDB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7CADA4C-D298-41F4-B715-46D235A8C977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7CADA4C-D298-41F4-B715-46D235A8C977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7CADA4C-D298-41F4-B715-46D235A8C977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7CADA4C-D298-41F4-B715-46D235A8C977}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
