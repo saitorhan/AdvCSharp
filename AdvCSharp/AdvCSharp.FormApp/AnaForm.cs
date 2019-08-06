@@ -148,5 +148,11 @@ namespace AdvCSharp.FormApp
             Properties.Settings.Default.Save();
             Application.Restart();
         }
+
+        private void servislerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form form = new FormService();
+            FormAc(ref form);
+        }
     }
 }

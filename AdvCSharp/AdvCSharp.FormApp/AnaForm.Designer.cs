@@ -41,6 +41,7 @@
             this.dilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingilizceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.türkçeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.servislerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,8 @@
             this.form4ToolStripMenuItem,
             this.düzenToolStripMenuItem,
             this.eklentilerToolStripMenuItem,
-            this.dilToolStripMenuItem});
+            this.dilToolStripMenuItem,
+            this.servislerToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1032, 24);
@@ -137,16 +139,23 @@
             // ingilizceToolStripMenuItem
             // 
             this.ingilizceToolStripMenuItem.Name = "ingilizceToolStripMenuItem";
-            this.ingilizceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ingilizceToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.ingilizceToolStripMenuItem.Text = "İngilizce";
             this.ingilizceToolStripMenuItem.Click += new System.EventHandler(this.ingilizceToolStripMenuItem_Click);
             // 
             // türkçeToolStripMenuItem
             // 
             this.türkçeToolStripMenuItem.Name = "türkçeToolStripMenuItem";
-            this.türkçeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.türkçeToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.türkçeToolStripMenuItem.Text = "Türkçe";
             this.türkçeToolStripMenuItem.Click += new System.EventHandler(this.türkçeToolStripMenuItem_Click);
+            // 
+            // servislerToolStripMenuItem
+            // 
+            this.servislerToolStripMenuItem.Name = "servislerToolStripMenuItem";
+            this.servislerToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.servislerToolStripMenuItem.Text = "Servisler";
+            this.servislerToolStripMenuItem.Click += new System.EventHandler(this.servislerToolStripMenuItem_Click);
             // 
             // AnaForm
             // 
@@ -181,5 +190,6 @@
         private System.Windows.Forms.ToolStripMenuItem dilToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingilizceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem türkçeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem servislerToolStripMenuItem;
     }
 }
