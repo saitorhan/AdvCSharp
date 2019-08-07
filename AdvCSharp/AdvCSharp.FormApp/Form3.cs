@@ -21,5 +21,13 @@ namespace AdvCSharp.FormApp
         {
             mailForm1.MailGonder();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.IsNullOrEmpty())
+            {
+                String.IsNullOrEmpty(textBox1.Text);
+            }
+        }
     }
 }

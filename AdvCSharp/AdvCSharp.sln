@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceSendMail", "W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{D7CADA4C-D298-41F4-B715-46D235A8C977}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvCSharp.EntityFrame", "AdvCSharp.EntityFrame\AdvCSharp.EntityFrame.csproj", "{F57E7D25-F5E6-4E3A-B4BA-15F0E86F52C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D7CADA4C-D298-41F4-B715-46D235A8C977}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7CADA4C-D298-41F4-B715-46D235A8C977}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7CADA4C-D298-41F4-B715-46D235A8C977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F57E7D25-F5E6-4E3A-B4BA-15F0E86F52C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F57E7D25-F5E6-4E3A-B4BA-15F0E86F52C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F57E7D25-F5E6-4E3A-B4BA-15F0E86F52C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F57E7D25-F5E6-4E3A-B4BA-15F0E86F52C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

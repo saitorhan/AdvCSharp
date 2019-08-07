@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F57E7D25-F5E6-4E3A-B4BA-15F0E86F52C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdvCSharp.EntityFrame</RootNamespace>
+    <AssemblyName>AdvCSharp.EntityFrame</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuditTemplate.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Company.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Country.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocsType.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocTemplate.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DodcModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DodcModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DodcModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DodcModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DodcModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EmailAlertQueu.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmailTemplateParameter.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EventNotification.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExtensionViewer.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Faq.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="File.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FileAuditEvent.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FileEmailAlertEvent.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FileEmailAlertSetting.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FileProperty.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FileVersion.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FileVersionData.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Flag.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FolderAuditEvent.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FolderEmailAlertEvent.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FolderEmailAlertSetting.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FolderGroupSecurityTemplate.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FolderProperty.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FolderStructure.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Group.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Icon.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mask.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageTemplate.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileProperty.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Property.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyValue.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PublicFileAuditEvent.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Section.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sequence.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServerSetting.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShareLink.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskDocument.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskNote.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskRouting.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskStatue.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TempFilesOnUpload.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogMaster.cs">
+      <DependentUpon>DodcModel.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="DodcModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DodcModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DodcModel.edmx.diagram">
+      <DependentUpon>DodcModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Category.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DocsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DocsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DodcModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DodcModel.edmx</DependentUpon>
+      <LastGenOutput>DodcModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DodcModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DodcModel.edmx</DependentUpon>
+      <LastGenOutput>DodcModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
