@@ -3357,7 +3357,7 @@
           <End Role="Groups" Type="Self.Group" Multiplicity="*" />
           <End Role="Users" Type="Self.User" Multiplicity="*" />
         </Association>
-        <EntityContainer Name="DocsEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DocsEntities" annotation:LazyLoadingEnabled="false">
           <EntitySet Name="AuditTemplates" EntityType="Self.AuditTemplate" />
           <EntitySet Name="Categories" EntityType="Self.Category" />
           <EntitySet Name="Companies" EntityType="Self.Company" />

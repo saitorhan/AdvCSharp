@@ -18,6 +18,7 @@ namespace AdvCSharp.EntityFrame
         public DocsEntities()
             : base("name=DocsEntities")
         {
+            this.Configuration.LazyLoadingEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
