@@ -13,18 +13,7 @@ namespace AdvCSharp.FormApp
 
         public MailRepository(string host, int port, bool ssl, string userName, string password)
         {
-            Client = new Imap4Client();
-
-            if (ssl)
-            {
-                Client.ConnectSsl(host, port);
-            }
-            else
-            {
-                Client.Connect(host, port);
-            }
-
-            Client.Login(userName, password);
+            
         }
 
         private MessageCollection GetMail(string mailbox, string searchPhrase)
