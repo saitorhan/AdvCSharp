@@ -154,5 +154,17 @@ namespace AdvCSharp.FormApp
             Form form = new FormService();
             FormAc(ref form);
         }
+
+        private void form5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form form = new Form5();
+            FormAc(ref form);
+        }
+
+        private void form6ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form form = new Form6();
+            FormAc(ref form);
+        }
     }
 }

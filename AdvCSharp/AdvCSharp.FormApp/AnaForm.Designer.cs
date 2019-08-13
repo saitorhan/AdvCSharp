@@ -42,6 +42,9 @@
             this.ingilizceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.türkçeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.servislerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.form5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.form6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +58,10 @@
             this.düzenToolStripMenuItem,
             this.eklentilerToolStripMenuItem,
             this.dilToolStripMenuItem,
-            this.servislerToolStripMenuItem});
+            this.servislerToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.form5ToolStripMenuItem,
+            this.form6ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1032, 24);
@@ -157,6 +163,25 @@
             this.servislerToolStripMenuItem.Text = "Servisler";
             this.servislerToolStripMenuItem.Click += new System.EventHandler(this.servislerToolStripMenuItem_Click);
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 20);
+            // 
+            // form5ToolStripMenuItem
+            // 
+            this.form5ToolStripMenuItem.Name = "form5ToolStripMenuItem";
+            this.form5ToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.form5ToolStripMenuItem.Text = "Form5";
+            this.form5ToolStripMenuItem.Click += new System.EventHandler(this.form5ToolStripMenuItem_Click);
+            // 
+            // form6ToolStripMenuItem
+            // 
+            this.form6ToolStripMenuItem.Name = "form6ToolStripMenuItem";
+            this.form6ToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.form6ToolStripMenuItem.Text = "Form6";
+            this.form6ToolStripMenuItem.Click += new System.EventHandler(this.form6ToolStripMenuItem_Click);
+            // 
             // AnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,5 +216,8 @@
         private System.Windows.Forms.ToolStripMenuItem ingilizceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem türkçeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem servislerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem form5ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem form6ToolStripMenuItem;
     }
 }
